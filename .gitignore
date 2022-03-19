@@ -1,0 +1,10 @@
+# ignore all logs
+logs/
+**/logs
+*.log
+*.sass-cache
+.sass-cache/
+*.rar
+*.zip
+node_modules
+node_modules/*
