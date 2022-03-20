@@ -1,0 +1,44 @@
+/*Splash - CSS Style*/
+.splash {
+    background-image: url("../images/intro-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 740px;
+    padding: 100px 0;
+    position: relative;
+}
+
+.splash:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.splash .text-block {
+    color: var(--white);
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    z-index: 20;
+}
+
+.splash .text-block h1 {
+    font-size: 82px;
+    font-weight: 700;
+    margin: 120px 0 10px 0;
+    text-transform: uppercase;
+}
+
+.splash .text-block p {
+    font-size: 22px;
+    line-height: 32px;
+    margin: 0 0 70px 0;
+}

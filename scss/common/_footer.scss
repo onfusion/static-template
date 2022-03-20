@@ -1,0 +1,32 @@
+/*Footer - CSS Style*/
+.footer {
+    background: var(--gray-100);
+    padding: 30px 0;
+}
+
+.copyright {
+    color: var(--gray-400)888;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* Go To Top - CSS Style */
+.btn-goTop {
+    animation: bounce 5s infinite;
+    height: 40px;
+    line-height: 30px;
+    min-width: initial;
+    opacity: 0.7;
+    padding: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    transition: opacity ease 0.3s;
+    width: 40px;
+}
+
+.btn-goTop:hover,
+.btn-goTop:focus {
+    opacity: 1;
+}

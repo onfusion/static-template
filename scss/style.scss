@@ -1,0 +1,21 @@
+@import 'variable';
+
+@import 'common/typography';
+@import 'common/header';
+@import 'common/navbar';
+@import 'common/form';
+@import 'common/button';
+@import 'common/grid';
+@import 'common/footer';
+@import 'common/animation';
+
+@import 'components/sectionAbout';
+@import 'components/sectionServices';
+@import 'components/sectionGallery';
+@import 'components/sectionTestimonial';
+@import 'components/sectionTeam';
+@import 'components/sectionContact';
+@import 'components/socialMedia';
+@import 'components/widget';
+
+@import 'responsive';

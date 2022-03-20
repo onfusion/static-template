@@ -1,0 +1,33 @@
+.btn {
+    background-image: linear-gradient(to right, var(--primary), var(--blueBerry));
+    border: 0;
+    border-radius: 30px;
+    color: var(--white);
+    cursor: pointer;
+    display: inline-block;
+    height: 48px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    min-width: 175px;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn:focus,
+.btn:hover {
+    background: var(--blueBerry);
+}
+
+.btn.btn-outline {
+    background: none;
+    border: 2px solid var(--white);
+    height: 52px;
+}
+
+.btn.btn-outline:focus,
+.btn.btn-outline:hover {
+    background: none;
+}

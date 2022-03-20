@@ -1,0 +1,42 @@
+/*Contact - CSS Style*/
+.contact {
+    background-image: linear-gradient(to right, var(--blueBerry), var(--primary));
+    color: var(--white);
+    padding: 90px 0 50px 0;
+}
+
+.contact .grid {
+    text-align: left;
+}
+
+.contact .grid .col-lg,
+.contact .grid .col-sm {
+    float: left;
+}
+
+.contact .grid .col-lg {
+    width: 70%;
+}
+
+.contact .grid .col-sm {
+    padding-left: 100px;
+    width: 30%;
+}
+
+.contact .grid p {
+    color: var(--blueSmoke);
+    font-size: 16px;
+}
+
+.contact .grid .grid {
+    margin: 0 -15px;
+}
+
+.contact .grid .grid>.col {
+    padding: 0 15px;
+    width: 50%;
+}
+
+.contact form .btn-outline {
+    margin-top: 30px;
+}

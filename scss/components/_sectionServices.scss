@@ -1,0 +1,23 @@
+/*Services - CSS Style*/
+.services {
+    background-image: linear-gradient(to right, var(--blueBerry), var(--primary));
+    color: var(--white);
+    padding: 90px 0;
+    text-align: center;
+}
+
+.services p {
+    font-size: 18px;
+}
+
+.services .grid {}
+
+.services .grid .col {
+    padding: 0 35px;
+    width: 33.3333%;
+}
+
+.services .col p {
+    color: var(--white);
+    font-size: 14px;
+}

@@ -1,0 +1,35 @@
+/*Widget - CSS Style*/
+.widget {
+    padding: 0 15px;
+    position: relative;
+}
+
+.widget .title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.contact-info {
+    color: var(--blueSmoke);
+    font-size: 15px;
+}
+
+.contact-info li {
+    margin-bottom: 20px;
+}
+
+.contact-info .has-icon {
+    color: var(--white);
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.contact-info .has-icon i {
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
