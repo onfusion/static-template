@@ -68,14 +68,45 @@ $(document).ready(function () {
     // Slick Slider JS
     // Variable Declaration
     var mainSlider = $('.slick-carousel');
+    var slickHasDots = mainSlider.attr('data-dots');
+    var slickHasArrows = mainSlider.attr('data-arrows');
+    var slickAutoPlay = mainSlider.attr('data-autoPlay');
+    var slickFade = mainSlider.attr('data-fade');
+    var slickSlidesSm = mainSlider.attr('data-slides-sm');
+    var slickSlidesMd = mainSlider.attr('data-slides-md');
+    var slickSlides = mainSlider.attr('data-slides');
+    console.log(slickSlidesSm, slickSlidesMd, slickSlides);
+
+    // For some browsers, `attr` is undefined; for others,
+    // `attr` is false.  Check for both.
+    // if (typeof attr !== 'undefined' && attr !== false) { }
 
     // Slick Initialize & Settings
     mainSlider.slick(
         {
             // lazyLoad: 'ondemand',
-            autoplay: true,
             // autoplaySpeed: 500,
-            dots: true
+            autoplay: slickAutoPlay == 'true' ? true:false,
+            arrows: slickHasArrows == 'true' ? true:false,
+            dots: slickHasDots == 'true' ? true:false,
+            fade: slickFade == 'true' ? true:false,
+            infinite: true,
+            slidesToShow: slickSlides ? slickSlides:1,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: slickSlidesMd ? slickSlidesMd:2,
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: slickSlidesSm ? slickSlidesSm:1,
+                    }
+                }
+            ],
         }
     );
 });
