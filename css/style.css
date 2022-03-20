@@ -432,6 +432,7 @@ textarea {
   text-align: center;
   transition: opacity ease 0.3s;
   width: 40px;
+  z-index: 9999;
 }
 
 .btn-goTop:hover,
