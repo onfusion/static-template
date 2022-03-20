@@ -86,8 +86,11 @@ ul.list-unstyle {
     display: table;
 }
 
+* {
+    // box-shadow: 0 0 0 1px blue;
+}
+
 .container {
-    /*box-shadow: 0 0 0 1px blue;*/
     margin: 0 auto;
     /*width: 1170px;*/
     max-width: 1170px;

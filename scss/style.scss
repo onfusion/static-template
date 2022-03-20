@@ -1,5 +1,8 @@
 @import 'variable';
 
+// @import '../node_modules/slick-carousel/slick/slick';
+// @import '../node_modules/slick-carousel/slick/slick-theme';
+
 @import 'common/typography';
 @import 'common/header';
 @import 'common/navbar';
@@ -17,5 +20,6 @@
 @import 'components/sectionContact';
 @import 'components/socialMedia';
 @import 'components/widget';
+@import 'components/slickSlider';
 
 @import 'responsive';

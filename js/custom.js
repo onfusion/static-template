@@ -64,4 +64,18 @@ $(document).ready(function () {
         }
 
     });
+
+    // Slick Slider JS
+    // Variable Declaration
+    var mainSlider = $('.slick-carousel');
+
+    // Slick Initialize & Settings
+    mainSlider.slick(
+        {
+            // lazyLoad: 'ondemand',
+            autoplay: true,
+            // autoplaySpeed: 500,
+            dots: true
+        }
+    );
 });
