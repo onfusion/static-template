@@ -1,0 +1,100 @@
+.slick-slider {
+    position: relative;
+
+    picture {
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
+    .slick-slide {
+        position: relative;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+        }
+    }
+
+    .caption {
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: var(--white);
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+
+        > .text-block {
+            padding: 30px;
+            text-align: center;
+        }
+    }
+
+    &.slick-carousel {
+        height: calc(100vh - 80px);
+        min-height: 600px;
+
+        picture {
+            height: calc(100vh - 80px);
+        }
+    }
+}
+
+.slick-dots {
+    padding: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+
+    li {
+        button {
+            &::before {
+                color: var(--white);
+                opacity: 0.9;
+            }
+        }
+
+        &.slick-active {
+            button {
+                &::before {
+                    color: var(--blueBerry);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    z-index: 99;
+
+    &::before {
+        color: var(--blueBerry);
+        font-size: 32px;
+    }
+}
+
+.slick-next {
+    right: 30px;
+}
+
+.slick-prev {
+    left: 30px;
+}
+
+.slick-dotted {
+    &.slick-slider {
+        margin: 0;
+    }
+}

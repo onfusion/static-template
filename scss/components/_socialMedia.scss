@@ -1,0 +1,49 @@
+/*Social - CSS Style*/
+.social-media {
+    color: var(--gray-500);
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+}
+
+.social-media li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.social-media a {
+    border: 2px solid var(--gray-500);
+    border-radius: 50%;
+    color: var(--gray-500);
+    display: inline-block;
+    font-size: 22px;
+    height: 48px;
+    padding: 10px 5px;
+    text-align: center;
+    width: 48px;
+}
+
+.social-media.light a {
+    border-color: var(--white);
+    color: var(--white);
+}
+
+.social-media a[class="facebook"]:hover {
+    border: 2px solid var(--facebook);
+    color: var(--facebook);
+}
+
+.social-media a[class="twitter"]:hover {
+    border: 2px solid var(--twitter);
+    color: var(--twitter);
+}
+
+.social-media a[class="gplus"]:hover {
+    border: 2px solid var(--gPlus);
+    color: var(--gPlus);
+}
+
+.social-media a[class="youtube"]:hover {
+    border: 2px solid var(--youtube);
+    color: var(--youtube);
+}

@@ -1,0 +1,27 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+</isscript>
+
+<div class="slide ${pdict.addClass ? pdict.addClass : ''}">
+    <isif condition="${pdict.image && pdict.mobileImage}">
+        <picture>
+            <source media="(max-width:767px)" srcset="${pdict.mobileImage.src.mobile}" alt="${pdict.alt_mobile}">
+            <img class="img-fluid" src="${pdict.image.src.desktop}" alt="" />
+        </picture>
+    </isif>
+
+    <isif condition="${pdict.slideCaption}">
+        <div class="caption">
+            <div class="text-block">
+                <isif condition="${pdict.slideCaption}">
+                    <isprint value="${pdict.slideCaption}" encoding="off" />
+                </isif>
+
+                <isif condition="${pdict.cta_label && pdict.cta_link}">
+                    <a class="btn" href="${pdict.cta_link}" title="${pdict.cta_label}">
+                        <isprint value="${pdict.cta_label}" encoding="off" /></a>
+                </isif>
+            </div>
+        </div>
+    </isif>
+</div>

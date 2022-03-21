@@ -20,9 +20,11 @@
 
 		<!-- Fontawesome -->
 		<link rel="stylesheet" type="text/css" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+		<!-- Slick Slider -->
+		<link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick.css" />
+		<link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick-theme.css" />
 		<!-- Style Sheets -->
 		<link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
-		<!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
 	</head>
 
 	<body>
@@ -64,17 +66,64 @@
 				</div>
 			</div>
 
-			<!-- Spash -->
-			<div id="splash" class="splash">
-				<div class="container">
-					<div class="text-block">
-						<h1>We are Interact</h1>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit. Duis sed dapibus leo nec ornare diam sed
-							commodo nibh ante facilisis bibendum.
-						</p>
-						<a class="btn" href="#features">Learn more</a>
+			<!-- Slick Carousel -->
+			<div class="slick-config" data-autoplay="true" data-arrows="true" data-dots="false" data-fade="false" data-slides-sm="1" data-slides-md="2" data-slides="">
+				<div class="slick-carousel">
+					<div class="slide">
+						<picture>
+							<source media="(min-width:768px)" srcset="./images/slide-02.jpg">
+							<img src="./images/01-small.jpg" alt="Slide Image">
+						</picture>
+
+						<div class="caption">
+							<div class="text-block">
+								<h1>We are Interact</h1>
+								<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+								<br>
+								<strong>Duis sed dapibus leo nec ornare diam sed</strong>
+								<br>
+								<p>commodo nibh ante facilisis bibendum.</p>
+								<a class="btn" href="#features">Learn more</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="slide">
+						<picture>
+							<source media="(min-width:768px)" srcset="./images/slide-05.jpg">
+							<img src="./images/02-small.jpg" alt="Slide Image">
+						</picture>
+
+						<div class="caption">
+							<div class="text-block">
+								<h1>We are Interact</h1>
+								<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+								<br>
+								<strong>Duis sed dapibus leo nec ornare diam sed</strong>
+								<br>
+								<p>commodo nibh ante facilisis bibendum.</p>
+								<a class="btn" href="#features">Learn more</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="slide">
+						<picture>
+							<source media="(min-width:768px)" srcset="./images/slide-06.jpg">
+							<img src="./images/03-small.jpg" alt="Slide Image">
+						</picture>
+
+						<div class="caption">
+							<div class="text-block">
+								<h1>We are Interact</h1>
+								<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+								<br>
+								<strong>Duis sed dapibus leo nec ornare diam sed</strong>
+								<br>
+								<p>commodo nibh ante facilisis bibendum.</p>
+								<a class="btn" href="#features">Learn more</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -127,6 +176,21 @@
 								natoque.
 							</p>
 						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Spash -->
+			<div id="splash" class="splash">
+				<div class="container">
+					<div class="text-block">
+						<h1>We are Interact</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Duis sed dapibus leo nec ornare diam sed
+							commodo nibh ante facilisis bibendum.
+						</p>
+						<a class="btn" href="#features">Learn more</a>
 					</div>
 				</div>
 			</div>
@@ -626,6 +690,7 @@
 
 		<!-- JS Scripts -->
 		<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="./node_modules/slick-carousel/slick/slick.min.js"></script>
 		<script src="./js/custom.js"></script>
 	</body>
 </html>

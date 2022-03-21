@@ -1,0 +1,187 @@
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--dark);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+    line-height: normal;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5,
+h6 {
+    font-size: 14px;
+}
+
+p {
+    margin: 15px 0;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ol {}
+
+ul.list-style {
+    list-style: none;
+    padding-left: 40px;
+}
+
+ul.list-style li {
+    position: relative;
+}
+
+ul.list-style li:before {
+    content: "\2713";
+    color: var(--primary);
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+
+ul.list-unstyle {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after,
+.container:after,
+.grid:after,
+.seprator:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+* {
+    // box-shadow: 0 0 0 1px blue;
+}
+
+.container {
+    margin: 0 auto;
+    /*width: 1170px;*/
+    max-width: 1170px;
+}
+
+.seprator {
+    /*background: red;*/
+    color: var(--gray-200);
+    font-style: italic;
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+}
+
+.seprator:before {
+    content: "";
+    background: var(--blueLight);
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+
+.seprator span {
+    background: var(--blueLight);
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+    z-index: 10;
+}
+
+.advance-heading {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 46px;
+    padding-bottom: 10px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.advance-heading.light {}
+
+.advance-heading:after {
+    content: "";
+    background-image: linear-gradient(to right, var(--primary), var(--blueBerry));
+    height: 4px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -30px;
+    width: 60px;
+}
+
+.advance-heading.left {
+    text-align: left;
+}
+
+.advance-heading.left:after {
+    left: 0;
+    margin-left: 0;
+}
+
+.advance-heading.right {
+    text-align: right;
+}
+
+.advance-heading.right:after {
+    left: auto;
+    right: 0;
+    margin-left: 0;
+}
+
+.advance-heading.light:after {
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.icon {
+    background-image: linear-gradient(to right, var(--primary), var(--blueBerry));
+    border-radius: 50%;
+    color: var(--white);
+    display: block;
+    height: 100px;
+    font-size: 32px;
+    line-height: 50px;
+    margin: 55px auto 15px;
+    padding: 25px 15px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+}

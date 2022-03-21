@@ -1,0 +1,342 @@
+/*Responsive - CSS Style*/
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+
+    /*Nav - CSS Style*/
+    .nav .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    /*Nav - CSS Style*/
+    .nav {
+        height: auto;
+    }
+
+    .nav .logo,
+    .nav .navbar {
+        float: none;
+        text-align: center;
+    }
+
+    .nav .logo a,
+    .nav .menu li {
+        display: inline-block;
+        float: none;
+    }
+
+    /*Splash - CSS Style*/
+    .splash {
+        /*height: 500px;*/
+        /* it can be also*/
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .splash:before {
+        background: rgba(0, 0, 0, 0.25);
+    }
+
+    .splash .text-block {
+        max-width: 700px;
+        padding: 30px 0;
+    }
+
+    .splash .text-block h1 {
+        font-size: 52px;
+        margin: 15px 0;
+    }
+
+    .splash .text-block p {
+        font-size: 18px;
+        line-height: 28px;
+        margin: 0 0 30px 0;
+    }
+
+    /*Feature - CSS Style*/
+    .features,
+    .about,
+    .services,
+    .gallery,
+    .testimonials,
+    .team,
+    .contact {
+        padding: 50px 0;
+    }
+
+    /*Features - CSS Style*/
+    .features .icon {
+        margin-top: 20px;
+    }
+
+    /*Service - CSS Style*/
+    .services .grid .col {
+        padding: 0 25px;
+    }
+
+    .grid h3 {
+        font-size: 18px;
+    }
+
+    /*Gallery - CSS Style*/
+    .gallery .thumbnail {
+        height: 200px;
+    }
+
+    .gallery .thumbnail .overlay {
+        height: 200px;
+    }
+
+    .gallery .overlay p {
+        margin-top: 60px;
+    }
+
+    .gallery .thumbnail img {
+        min-width: 300px;
+    }
+
+    /*Testimonial - CSS Style*/
+    .testimonials .grid {
+        margin-top: 50px;
+    }
+
+    .testimonials .grid .col {
+        padding: 0 50px;
+        width: 50%;
+    }
+
+    .testimonials .media {
+        /*height: 155px;*/
+        /*it can be also*/
+        margin-bottom: 20px;
+        min-height: 155px;
+    }
+
+    /*Team - CSS Style*/
+    .team .grid {
+        margin-top: 50px;
+    }
+
+    .team-member .dp {
+        height: 200px;
+        width: 100%;
+    }
+
+    /*Contact - CSS Style*/
+    .contact .advance-heading.left {
+        text-align: center;
+    }
+
+    .contact .advance-heading.left:after {
+        left: 50%;
+        margin-left: -30px;
+    }
+
+    .contact .grid .col-sm,
+    .contact .grid .col-lg {
+        float: none;
+        padding: 0 50px;
+        width: 100%;
+    }
+
+    .contact .grid .col-lg {
+        margin-bottom: 50px;
+    }
+
+    .contact .seprator {
+        margin: 35px 0;
+    }
+
+    .contact .widget .title {
+        border-bottom: 1px solid;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 34px;
+        padding-bottom: 5px;
+    }
+
+    .contact .social-media {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    /*Nav - CSS Style*/
+
+    .nav.fixed {
+        animation: slide 0.5s;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 999;
+    }
+
+    .nav .logo {
+        float: left;
+    }
+
+    .nav .logo a {
+        display: block;
+    }
+
+    .nav .navbar {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: auto;
+        z-index: 999;
+    }
+
+    .navbar .btn-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+    }
+
+    .nav .navbar .menu {
+        display: none;
+        background: rgba(0, 0, 0, 0.85);
+        height: calc(100vh - 80px);
+        margin-top: 80px;
+        padding: 20px 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .nav .navbar .menu.open {
+        display: block;
+    }
+
+    .nav .menu li {
+        display: block;
+        text-align: left;
+    }
+
+    .nav .menu a {
+        color: var(--white);
+    }
+
+    /*Splash - CSS Style*/
+    .splash .text-block {
+        padding: 20px 15px;
+    }
+
+    .splash .text-block h1 {
+        font-size: 32px;
+    }
+
+    .splash .text-block p {
+        font-size: 16px;
+    }
+
+    /*Sections - Common CSS Style*/
+    .advance-heading {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .advance-heading.left,
+    .advance-heading.right {
+        text-align: center;
+    }
+
+    .advance-heading.left:after {
+        left: 50%;
+        margin-left: -30px;
+    }
+
+    .advance-heading.right:after {
+        right: 50%;
+        margin-right: -30px;
+    }
+
+    .features,
+    .about,
+    .services,
+    .gallery,
+    .testimonials,
+    .team,
+    .contact {
+        padding: 30px 0;
+    }
+
+    /*Grid - CSS Style*/
+    .grid .col {
+        float: none;
+        margin: 20px auto;
+        max-width: 480px;
+        width: 100%;
+    }
+
+    .about .grid .col,
+    .services .grid .col,
+    .gallery .grid .col,
+    .testimonials .grid .col {
+        float: none;
+        width: 100%;
+    }
+
+    .gallery .grid,
+    .testimonials .grid,
+    .team .grid {
+        margin-top: 35px;
+    }
+
+    /*Gallery - CSS Style*/
+    .gallery .grid .col {
+        padding: 0 20px;
+    }
+
+    /*Testimonials - CSS Style*/
+    .testimonials .grid .col {
+        padding: 0 20px;
+    }
+
+    .testimonials .media {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .media .dp {
+        margin: 0 auto;
+        position: relative;
+    }
+
+    /*Contact - CSS Style*/
+    .contact .grid .col-sm,
+    .contact .grid .col-lg {
+        padding: 0 20px;
+    }
+
+    .contact .grid .col-lg {
+        margin-bottom: 35px;
+    }
+
+    .contact .grid .grid>.col {
+        width: 100%;
+    }
+
+    .contact .contact-info {
+        padding: 0;
+    }
+
+    .contact .seprator {
+        /*max-width: 70%;
+        margin: 25px auto;*/
+    }
+
+    .social-media li {
+        margin: 10px;
+    }
+}

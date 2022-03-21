@@ -1,0 +1,78 @@
+{
+	"name": "Slick Slider",
+	"description": "--description here--",
+	"group": "assets",
+	"attribute_definition_groups": [
+		{
+			"id": "slickSlider",
+			"name": "Slick Slider Configuration",
+			"description": "--description here--",
+			"attribute_definitions": [
+				{
+					"id": "addClass",
+					"name": "Add Custom Class",
+					"type": "string",
+					"required": false
+				},
+				{
+					"id": "slickAutoPlay",
+					"name": "Slick Auto Play",
+					"type": "boolean",
+					"default_value": false,
+					"required": false
+				},
+				{
+					"id": "slickArrows",
+					"name": "Slick Navigation Arrows",
+					"type": "boolean",
+					"default_value": false,
+					"required": false
+				},
+				{
+					"id": "slickDots",
+					"name": "Slick Indicators Dots",
+					"type": "boolean",
+					"default_value": false,
+					"required": false
+				},
+				{
+					"id": "slickFade",
+					"name": "Slick Animation Fade/Slide",
+					"type": "boolean",
+					"default_value": false,
+					"required": false
+				},
+				{
+					"id": "slickSlide",
+					"name": "Slick Slide Items (Desktop)",
+					"type": "enum",
+					"values": ["1", "2", "3", "4", "5", "6"],
+					"default_value": "1",
+					"required": false
+				},
+				{
+					"id": "slickSlideMd",
+					"name": "Slick Slide Items (Tablet)",
+					"type": "enum",
+					"values": ["1", "2", "3", "4"],
+					"default_value": "1",
+					"required": false
+				},
+				{
+					"id": "slickSlideSm",
+					"name": "Slick Slide Items (Mobile)",
+					"type": "enum",
+					"values": ["1", "2", "3"],
+					"default_value": "1",
+					"required": false
+				}
+			]
+		}
+	],
+	"region_definitions": [
+		{
+			"id": "slickSliderRegion",
+			"name": "Add Component"
+		}
+	]
+}
