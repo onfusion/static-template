@@ -67,14 +67,15 @@ $(document).ready(function () {
 
     // Slick Slider JS
     // Variable Declaration
+    var slickConfig = $('.slick-config');
     var mainSlider = $('.slick-carousel');
-    var slickHasDots = mainSlider.attr('data-dots');
-    var slickHasArrows = mainSlider.attr('data-arrows');
-    var slickAutoPlay = mainSlider.attr('data-autoPlay');
-    var slickFade = mainSlider.attr('data-fade');
-    var slickSlidesSm = mainSlider.attr('data-slides-sm');
-    var slickSlidesMd = mainSlider.attr('data-slides-md');
-    var slickSlides = mainSlider.attr('data-slides');
+    var slickHasDots = slickConfig.attr('data-dots');
+    var slickHasArrows = slickConfig.attr('data-arrows');
+    var slickAutoPlay = slickConfig.attr('data-autoplay');
+    var slickFade = slickConfig.attr('data-fade');
+    var slickSlidesSm = slickConfig.attr('data-slides-sm');
+    var slickSlidesMd = slickConfig.attr('data-slides-md');
+    var slickSlides = slickConfig.attr('data-slides');
     console.log(slickSlidesSm, slickSlidesMd, slickSlides);
 
     // For some browsers, `attr` is undefined; for others,

@@ -16,5 +16,33 @@ module.exports.render = function (context) {
 		model.addClass = content.addClass;
 	}
 
+	if (content.slickAutoPlay) {
+		model.slickAutoPlay = content.slickAutoPlay;
+	}
+
+	if (content.slickArrows) {
+		model.slickArrows = content.slickArrows;
+	}
+
+	if (content.slickDots) {
+		model.slickDots = content.slickDots;
+	}
+
+	if (content.slickFade) {
+		model.slickFade = content.slickFade;
+	}
+
+	if (content.slickSlide) {
+		model.slickSlide = content.slickSlide;
+	}
+
+	if (content.slickSlideMd) {
+		model.slickSlideMd = content.slickSlideMd;
+	}
+
+	if (content.slickSlideSm) {
+		model.slickSlideSm = content.slickSlideSm;
+	}
+
 	return new Template("experience/components/layouts/slickSlider").render(model).text;
 };

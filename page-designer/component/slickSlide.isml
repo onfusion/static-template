@@ -11,8 +11,7 @@
     </isif>
 
     <isif condition="${pdict.slideCaption}">
-        <div
-            class="caption">
+        <div class="caption">
             <div class="text-block">
                 <isif condition="${pdict.slideCaption}">
                     <isprint value="${pdict.slideCaption}" encoding="off" />

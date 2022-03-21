@@ -1,0 +1,9 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+</isscript>
+
+<isset name="classList" value="${'slick-carousel'}" scope="page" />
+
+<div class="slick-config ${pdict.addClass ? pdict.addClass : ''}" data-autoplay="${pdict.slickAutoPlay}" data-arrows="${pdict.slickArrows}" data-dots="${pdict.slickDots}" data-fade="${pdict.slickFade}" data-slides-sm="${pdict.slickSlideSm}" data-slides-md="${pdict.slickSlideMd}" data-slides="${pdict.slickSlide}">
+    <isprint value="${pdict.regions.slickSliderRegion.setClassName(classList).render()}" encoding="off" />
+</div>
