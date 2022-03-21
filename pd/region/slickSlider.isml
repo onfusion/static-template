@@ -1,0 +1,6 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+</isscript>
+
+<isset name="classList" value="${'slick-carousel'}" scope="page" />
+<isprint value="${pdict.regions.slickSliderRegion.setClassName(classList).render()}" encoding="off" />
